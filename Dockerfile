@@ -2,6 +2,7 @@ FROM golang:1.11
 
 RUN mkdir /home/script
 ADD script /home/script
+RUN chmod 755 /home/script/*
 
 WORKDIR /go/src/app
 ARG SRC_TAG
